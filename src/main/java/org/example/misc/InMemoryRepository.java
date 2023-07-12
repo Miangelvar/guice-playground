@@ -60,6 +60,6 @@ public class InMemoryRepository implements PersonRepository {
     }
 
     private boolean ageBetween(int age, int minAge, int maxAge) {
-        return minAge >= age ||  age <= maxAge;
+        return age >= minAge &&  age <= maxAge;
     }
 }
